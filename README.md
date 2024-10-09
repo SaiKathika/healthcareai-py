@@ -98,3 +98,31 @@ tag) so we can help others along this process.
     * Goals (ie, what are you trying to accomplish)
     * Crystal clear steps for reproducing the error
 - You can also log a new issue in the GitHub repo by clicking [here](https://github.com/HealthCatalyst/healthcareai-py/issues/new)
+
+## Logistic Regression for Diabetes Prediction
+
+### Overview
+A new feature has been added to implement a **Logistic Regression model** for predicting diabetes based on patient data. This model uses the **Pima Indians Diabetes Dataset** and predicts whether or not a patient has diabetes based on features such as glucose levels, BMI, age, insulin, and more.
+
+### How to Use the Diabetes Prediction Model
+
+1. **Dataset**:
+   Ensure you have the **Pima Indians Diabetes Dataset** available. The data should be saved as `data/diabetes.csv` in the following format:
+   
+   | Feature        | Description                                    |
+   |----------------|------------------------------------------------|
+   | Pregnancies    | Number of pregnancies                          |
+   | Glucose        | Plasma glucose concentration                   |
+   | BloodPressure  | Diastolic blood pressure (mm Hg)               |
+   | SkinThickness  | Triceps skin fold thickness (mm)               |
+   | Insulin        | 2-Hour serum insulin (mu U/ml)                 |
+   | BMI            | Body mass index (weight in kg/(height in m)^2) |
+   | DiabetesPedigreeFunction | Diabetes pedigree function           |
+   | Age            | Age (years)                                    |
+   | Outcome        | Whether the patient has diabetes (0 or 1)      |
+
+2. **Running the Model**:
+   The model is implemented in the Python script `diabetes_prediction.py`. You can run this script to train and test the model as follows:
+
+   ```bash
+   python diabetes_prediction.py
